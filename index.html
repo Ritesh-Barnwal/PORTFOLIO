@@ -1,43 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio.com</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="portfolio-container">
-        <ul class="navlist">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#" class="border">Work</a></li>
-            <li><a href="#" class="border">About</a></li>
-            <li><a href="#" class="border">Project</a></li>
-            <li><a href="#" class="border">Service</a></li>
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#home" class="nav-logo">R<span>.</span>K<span>.</span>B</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="left-container">
-            <div class="icons">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-codepen"></i>
+        <a href="mailto:riteshbarnwal120@gmail.com" class="nav-cta">Hire Me</a>
+        <div class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="hero-grid">
+            <div class="hero-content fade-up">
+                <div class="hero-badge"><span class="dot"></span>Open to Internships</div>
+                <h1 class="hero-title">Creative<br><span class="accent">Web Developer</span></h1>
+                <p class="hero-name">Ritesh Kumar Barnwal</p>
+                <p class="hero-desc">B.Tech CSE student at Sarala Birla University, Ranchi — building fast, beautiful,
+                    AI-powered web applications with modern technologies.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View My Work &nbsp;↓</a>
+                    <a href="#contact" class="btn-outline">Let's Talk</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Ritesh-Barnwal" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="mailto:riteshbarnwal120@gmail.com" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+919955762545" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
             </div>
-            <div class="content">
-                <p class="intro">Hi ! I am <span>Ritesh Kumar Barnwal</span></p>
-                <h1>Web Developer</h1>
-                <p class="details">I am a student of B.Tech CSE studying at SBU(Ranchi).</p>
-                <div class="btn">
-                    <button class="btn1">Hire Me!</button>
-                    <button class="btn2">View Project</button>
+            <div class="hero-visual fade-up" style="transition-delay:.15s">
+                <div class="avatar-wrap">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring-inner"></div>
+                    <div class="avatar-img"><img src="Image_Editor.png.jpg" alt="Ritesh"></div>
+                    <div class="float-badge badge-tl"><span>💻</span><span>Frontend Dev</span></div>
+                    <div class="float-badge badge-br"><span>🤖</span><span>AI Projects</span></div>
                 </div>
             </div>
         </div>
-        <div class="right-container"></div>
-        <div class="design">
-            <div class="circle"></div>
-            <div class="circle"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-img-wrap fade-up">
+                    <div class="about-img-box">
+                        <i class="fa-regular fa-user about-placeholder"></i>
+                    </div>
+                    <div class="about-corner tl"></div>
+                    <div class="about-corner br"></div>
+                    <div class="exp-card">
+                        <div>
+                            <div class="exp-num">8.8</div>
+                            <div class="exp-label">CGPA<br>B.Tech</div>
+                        </div>
+                        <div style="width:1px;height:40px;background:var(--border)"></div>
+                        <div>
+                            <div class="exp-num" style="color:var(--accent2)">5+</div>
+                            <div class="exp-label">Projects<br>Deployed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text fade-up" style="transition-delay:.1s">
+                    <p class="section-label">About Me</p>
+                    <h2 class="section-title">Coding Ideas Into<br>Real Experiences</h2>
+                    <p>I'm Ritesh Kumar Barnwal, a Computer Science Engineering student at Sarala Birla University,
+                        Ranchi. I love building interactive, AI-powered web apps and turning complex ideas into clean,
+                        user-friendly interfaces.</p>
+                    <p>From thyroid disease detection using voice analysis to AI-powered recipe generators, I enjoy
+                        working at the intersection of frontend development and machine learning. I deploy my work live
+                        using Vercel and GitHub Pages.</p>
+                    <div class="about-facts">
+                        <div class="fact"><i class="fa-solid fa-location-dot"></i><span><strong>Mahilong,
+                                    Ranchi</strong>, Jharkhand</span></div>
+                        <div class="fact"><i class="fa-solid fa-graduation-cap"></i><span>B.Tech CSE @
+                                <strong>SBU</strong></span></div>
+                        <div class="fact"><i class="fa-solid fa-code"></i><span>Frontend &amp; <strong>AI
+                                    Projects</strong></span></div>
+                        <div class="fact"><i class="fa-solid fa-heart"></i><span>Gym · Driving ·
+                                <strong>Tech</strong></span></div>
+                    </div>
+                    <a href="https://github.com/Ritesh-Barnwal" target="_blank" class="btn-primary">GitHub Profile
+                        &nbsp;<i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-inner">
+            <p class="section-label fade-up">What I Know</p>
+            <h2 class="section-title fade-up">Skills &amp; Tech Stack</h2>
+            <p class="section-desc fade-up">From pixel-perfect UIs to AI integrations — here's the stack I work with.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card fade-up">
+                    <div class="skill-icon">🌐</div>
+                    <div class="skill-name">HTML &amp; CSS</div>
+                    <div class="skill-level-text">Expert · Responsive Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-w="92"></div>
+                    </div>
+                    <div class="skill-tags"><span class="skill-tag">Flexbox</span><span
+                            class="skill-tag">Grid</span><span class="skill-tag">Animations</span></div>
+                </div>
+                <div class="skill-card fade-up" style="transition-delay:.05s">
+                    <div class="skill-icon">⚡</div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level-text">Advanced · ES6+ &amp; DOM</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-w="82"></div>
+                    </div>
+                    <div class="skill-tags"><span class="skill-tag">ES6+</span><span class="skill-tag">DOM
+                            APIs</span><span class="skill-tag">Fetch/AJAX</span></div>
+                </div>
+                <div class="skill-card fade-up" style="transition-delay:.1s">
+                    <div class="skill-icon">⚛️</div>
+                    <div class="skill-name">React / Vite</div>
+                    <div class="skill-level-text">Intermediate · Component UI</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-w="70"></div>
+                    </div>
+                    <div class="skill-tags"><span class="skill-tag">Components</span><span
+                            class="skill-tag">Hooks</span><span class="skill-tag">Vite</span></div>
+                </div>
+                <div class="skill-card fade-up" style="transition-delay:.15s">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-level-text">Intermediate · ML &amp; Scripting</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-w="75"></div>
+                    </div>
+                    <div class="skill-tags"><span class="skill-tag">ML Basics</span><span
+                            class="skill-tag">KNN</span><span class="skill-tag">Random Forest</span></div>
+                </div>
+                <div class="skill-card fade-up" style="transition-delay:.2s">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="skill-name">Databases</div>
+                    <div class="skill-level-text">Intermediate · SQL &amp; NoSQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-w="68"></div>
+                    </div>
+                    <div class="skill-tags"><span class="skill-tag">MySQL</span><span
+                            class="skill-tag">MongoDB</span><span class="skill-tag">Firebase</span></div>
+                </div>
+                <div class="skill-card fade-up" style="transition-delay:.25s">
+                    <div class="skill-icon">🚀</div>
+                    <div class="skill-name">Dev Tools</div>
+                    <div class="skill-level-text">Proficient · Deploy &amp; Version Control</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-w="78"></div>
+                    </div>
+                    <div class="skill-tags"><span class="skill-tag">Git/GitHub</span><span
+                            class="skill-tag">Vercel</span><span class="skill-tag">Firebase Auth</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-inner">
+            <p class="section-label fade-up">What I've Built</p>
+            <h2 class="section-title fade-up">Featured Projects</h2>
+            <p class="section-desc fade-up">Live projects — click the buttons to see them in action on the web.</p>
+            <div class="projects-grid">
+
+                <div class="project-card fade-up">
+                    <div class="project-thumb pt1">🩺</div>
+                    <div class="project-body">
+                        <div class="project-tags"><span class="project-tag">Python</span><span
+                                class="project-tag">ML</span><span class="project-tag">React</span><span
+                                class="project-tag">Vercel</span></div>
+                        <h3 class="project-title">AI Thyroid Disease Detector</h3>
+                        <p class="project-desc">AI-based thyroid disease prediction using voice analysis and machine
+                            learning (KNN/Random Forest). Built frontend integration and deployed on Vercel.</p>
+                        <div class="project-links">
+                            <a href="https://sbu-disese-detect-using-chakras.vercel.app" target="_blank"
+                                class="proj-btn proj-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+                            <a href="https://github.com/Ritesh-Barnwal/SBU-Disese-Detect-using-Chakras" target="_blank"
+                                class="proj-btn proj-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay:.1s">
+                    <div class="project-thumb pt2">👨‍🍳</div>
+                    <div class="project-body">
+                        <div class="project-tags"><span class="project-tag">HTML/CSS/JS</span><span
+                                class="project-tag">Groq AI API</span><span class="project-tag">Firebase</span></div>
+                        <h3 class="project-title">AI CookBook Website</h3>
+                        <p class="project-desc">AI-powered recipe generation website integrating Groq AI API for recipes
+                            and Firebase Authentication for personalized user login and access.</p>
+                        <div class="project-links">
+                            <a href="https://ritesh-barnwal.github.io/AI-COOK-BOOK/" target="_blank"
+                                class="proj-btn proj-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+                            <a href="https://github.com/Ritesh-Barnwal/AI-COOK-BOOK" target="_blank"
+                                class="proj-btn proj-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay:.2s">
+                    <div class="project-thumb pt3">🤖</div>
+                    <div class="project-body">
+                        <div class="project-tags"><span class="project-tag">HTML/CSS/JS</span><span
+                                class="project-tag">GSAP</span></div>
+                        <h3 class="project-title">Chat Bot Frontend</h3>
+                        <p class="project-desc">Interactive chatbot frontend interface with smooth GSAP animations and a
+                            modern, responsive UI design. Clean, minimal, and polished.</p>
+                        <div class="project-links">
+                            <a href="https://ritesh-barnwal.github.io/Chat-Bot/" target="_blank"
+                                class="proj-btn proj-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+                            <a href="https://github.com/Ritesh-Barnwal/Chat-Bot" target="_blank"
+                                class="proj-btn proj-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay:.05s">
+                    <div class="project-thumb pt4">🌿</div>
+                    <div class="project-body">
+                        <div class="project-tags"><span class="project-tag">HTML/CSS/JS</span><span
+                                class="project-tag">GitHub Pages</span></div>
+                        <h3 class="project-title">Portfolio Website v1</h3>
+                        <p class="project-desc">Personal portfolio website built from scratch with responsive design,
+                            smooth scrolling, and animations. Deployed on GitHub Pages.</p>
+                        <div class="project-links">
+                            <a href="https://ritesh-barnwal.github.io/PORTFOLIO/" target="_blank"
+                                class="proj-btn proj-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+                            <a href="https://github.com/Ritesh-Barnwal/PORTFOLIO" target="_blank"
+                                class="proj-btn proj-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay:.15s">
+                    <div class="project-thumb pt5">📷</div>
+                    <div class="project-body">
+                        <div class="project-tags"><span class="project-tag">HTML/CSS/JS</span><span
+                                class="project-tag">Responsive UI</span></div>
+                        <h3 class="project-title">Photography Website</h3>
+                        <p class="project-desc">Photography-themed frontend website with a visually stunning, fully
+                            responsive modern UI. Focus on layout, typography, and visual hierarchy.</p>
+                        <div class="project-links">
+                            <a href="https://ritesh-barnwal.github.io/Photograph/" target="_blank"
+                                class="proj-btn proj-primary"><i class="fa-solid fa-eye"></i> Live Demo</a>
+                            <a href="https://github.com/Ritesh-Barnwal/Photograph" target="_blank"
+                                class="proj-btn proj-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="section-inner">
+            <p class="section-label fade-up">Academic Background</p>
+            <h2 class="section-title fade-up">Education</h2>
+            <p class="section-desc fade-up">My academic journey in Computer Science.</p>
+            <div class="edu-timeline">
+                <div class="edu-card fade-up">
+                    <div class="edu-icon">🎓</div>
+                    <div>
+                        <div class="edu-year">2023 – 2027</div>
+                        <div class="edu-school">Sarala Birla University, Ranchi</div>
+                        <div class="edu-degree">Bachelor of Engineering — Computer Science &amp; Engineering</div>
+                        <span class="edu-badge">CGPA: 8.8</span>
+                    </div>
+                </div>
+                <div class="edu-card fade-up" style="transition-delay:.1s">
+                    <div class="edu-icon">📚</div>
+                    <div>
+                        <div class="edu-year">2021 – 2023</div>
+                        <div class="edu-school">RLSY College — JAC Board</div>
+                        <div class="edu-degree">Higher Secondary Education (Class 12)</div>
+                        <span class="edu-badge">Percentage: 88%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-inner">
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <p class="section-label">Get In Touch</p>
+                    <h2 class="section-title">Let's Work<br>Together</h2>
+                    <p>Have a project idea, internship opportunity, or just want to connect? I'd love to hear from you —
+                        reach out directly or fill in the form!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:riteshbarnwal120@gmail.com" class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">riteshbarnwal120@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:+919955762545" class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+91 9955762545</div>
+                            </div>
+                        </a>
+                        <div class="contact-card" style="cursor:default">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Mahilong, Ranchi, Jharkhand</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-row">
+                        <a href="https://github.com/Ritesh-Barnwal" target="_blank" class="social-btn"
+                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:riteshbarnwal120@gmail.com" class="social-btn" aria-label="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form fade-up" style="transition-delay:.1s">
+                    <div class="form-row">
+                        <div class="form-group"><label>First Name</label><input type="text" id="fname"
+                                placeholder="John"></div>
+                        <div class="form-group"><label>Last Name</label><input type="text" id="lname" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="form-group"><label>Email Address</label><input type="email" id="femail"
+                            placeholder="john@example.com"></div>
+                    <div class="form-group"><label>Subject</label><input type="text" id="fsubject"
+                            placeholder="Internship / Collaboration / Query"></div>
+                    <div class="form-group"><label>Message</label><textarea id="fmessage"
+                            placeholder="Tell me about your project or opportunity..."></textarea></div>
+                    <button class="form-submit" onclick="submitForm()">Send Message &nbsp;<i
+                            class="fa-solid fa-paper-plane"></i></button>
+                    <div class="form-status" id="formStatus">✅ Message sent! Ritesh will get back to you soon.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-left">Designed &amp; Built by <strong>Ritesh Kumar Barnwal</strong> © 2024</div>
+        <div class="footer-right">B.Tech CSE · SBU Ranchi · Made with ❤️</div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="index12.js"></script>
 </body>
 </html>
